@@ -1,0 +1,495 @@
+
+.box{
+    display: flex;
+    gap: 194px;
+    align-items: center;
+    @include responsive(768){
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+    @include responsive(350){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .raqamlar{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        max-width: 510px;
+        
+        @include responsive(350){
+           display: flex;
+           gap: 30px;
+            align-items: center;
+        }
+
+    }
+      
+    .box__right{
+        width: 50%; 
+    }
+    .box__left{
+        @include responsive(768){
+           margin-top: 88px;
+        }
+        @include responsive(576){
+           margin-top: -187px;
+           width: 352px;
+           height: 352px;
+         }
+         @include responsive(350){
+            width: 283px;
+            height: 283px;
+           padding-top: 200px;
+         }
+    }
+    .right__us{
+        width: 219px;
+        height: 80px;
+        font-family: $site-fonts;
+        font-weight: 600;
+        font-size: 4.8rem;
+        line-height: 1.6;
+        color: $black-color;
+        margin-bottom: 23px;
+        @include responsive(992){
+           width: 165px;
+           height: 80px;
+           font-weight: 600;
+           font-size: 3rem;
+           line-height: 2.6;
+        }
+        @include responsive(768){
+            // width: 137px;
+            // height: 80px;
+            font-weight: 600;
+            font-size: 3.6rem;
+            line-height: 2.2;
+             margin-top: -200px;
+             margin-bottom: 50px;
+         }
+         @include responsive(576){
+            font-size: 3rem;
+            line-height: 2.6;
+         }
+         @include responsive(350){
+            padding-top: 200px;
+             font-size: 2.4rem;
+             line-height: 3.3;
+         }
+    }
+    .model{
+        width: 635px;
+        height: 240px;
+        font-family: $site-fonts;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: $text-color;
+        @include responsive(992){
+            width: 635px;
+            height: 192px;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            margin-top: -30px;
+        }
+        @include responsive(768){
+            font-size: 1.4rem;
+            line-height: 1.5;
+            text-align: center;
+            margin-left: -150px;
+            
+        }
+        @include responsive(576){
+            width: 500px;
+            height: 140px;
+            font-size: 1.4rem;
+            line-height: 1.5;
+           
+         }
+         @include responsive(350){
+            font-size: 1.3rem;
+            padding-top: 50px;
+            width: 100%;
+             max-width: 300px;
+             height: 100%;
+             min-height: 90px;
+              text-align: center;
+             margin-bottom: 250px;
+         margin-right: 0;
+             
+         }
+       
+    }
+ 
+} 
+.raqam h2{
+    font-family: $site-fonts;
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 1.6;
+    color: $black-color;
+    @include responsive(992){
+       font-size: 3rem;
+       line-height: 2.6;
+    }
+    @include responsive(768){
+        margin-top: -50px;
+     }
+
+     @include responsive(576){
+            font-size: 2.4rem;
+            line-height:3.3;
+         }
+         @include responsive(350){
+         
+             
+         }
+} 
+
+
+.raqam p{
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $text-color;
+    @include responsive(992){
+        font-size:1.6rem;
+        line-height: 1.5;
+     }
+     @include responsive(768){
+        margin-top: -20px;
+     }
+     @include responsive(576){
+        font-size: 1.4rem;
+        line-height:1.5;
+     }
+     @include responsive(350){
+        margin-bottom: 100px;
+     }
+}
+.pric{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    .soz{
+        width: 100%;
+        max-width: 169px;
+        height: 100%;
+        min-height: 80px;
+        font-family: $site-fonts;
+        font-weight: 600;
+        font-size: 4.8rem;
+        line-height: 1.6;
+        color: $black-color;
+        margin-top: 229px;
+        margin-bottom: 80px;
+        @include responsive(992){
+           font-size: 3.6rem;
+         }
+    }
+   
+}
+.onlin{
+    margin-bottom: 40px;
+    @include responsive(992){
+        width: 222px;
+        height: 222px;
+        margin-bottom: 80px;
+    }
+    @include responsive(768){
+        width: 197px;
+        height: 197px;
+        margin-bottom: 20px;
+      }
+}
+
+.self{
+    width: 372px;
+    height: 48px;
+    font-family: $site-fonts;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.6;
+    color: $black-color;
+   margin-bottom: 20px;
+   @include responsive(992){
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+@include responsive(768){
+       font-size: 2rem;
+  }
+}
+.course{
+    @include responsive(768){
+       margin-bottom: 200px;
+      }
+}
+.start{
+    width: 100%;
+    max-width: 415px;
+    height: 100%;
+    min-height: 120px;
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $text-color;
+    @include responsive(992){
+        font-size: 1.6rem;
+        width: 100%;
+        max-width: 635px;
+        height: 100%;
+        min-height: 60px;
+    }
+    @include responsive(768){
+          font-size: 1.4rem;
+      }
+}
+
+
+.pricing {
+    display: flex;
+    gap: 130px;
+    @include responsive(1160){
+        display: flex;
+        gap: 30px;
+    }
+    @include responsive(992){
+        display: flex;
+        gap: 30px;
+    }
+    @include responsive(768){
+       display: flex;
+       flex-direction: column;
+       gap: 400px;
+     }
+}
+.per{
+    display: flex;
+    gap: 8px;
+    width: 240px;
+    align-items: center;
+    background-color: $price-bg-color;
+    border-radius: 5px;
+    padding: 0px 18px;
+    margin-top: -450px;
+
+    @include responsive(1197){
+        margin-top: -400px;
+    }
+    @include responsive(992){
+        margin-top: -460px;
+    }
+    @include responsive(768){
+       margin-top: -5px;
+      }
+
+}
+.number{
+    width: 90px;
+    height: 45px;
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: $primary-color;
+    @include responsive(992){
+        font-size: 2.4rem;
+     }
+     @include responsive(768){
+        font-size: 2.2rem;
+        padding-top: 5px;
+      }
+}
+.month{
+    width: 100px;
+    height: 27px;
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color:#546269; 
+    @include responsive(992){
+        font-size: 1.6rem;
+     }
+     @include responsive(768){
+       font-size: 1.6rem;
+      }
+}
+.months{
+    width: 100px;
+    height: 27px;
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color:#546269; 
+    @include responsive(992){
+        font-size: 1.6rem;
+     }
+     @include responsive(992){
+        font-size: 1.6rem;
+    }
+}
+     .classe{
+        @include responsive(768){
+           margin-bottom:-300px;
+           margin-top: -500px;
+           }
+
+     }
+.suhbat{
+    margin-bottom: 100px;
+    @include responsive(992){
+       width: 267px;
+       height: 195px;
+    }
+    @include responsive(992){
+       margin-bottom: -5px;
+    }
+}
+.study{
+    font-family: $site-fonts;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.6;
+    color: $primary-color;
+    @include responsive(992){
+        font-size: 2.2rem;
+       margin-bottom: 9px;
+    }
+    @include responsive(992){
+        font-size: 2rem;
+    }
+
+}
+.lear{
+    width: 100%;
+   max-width:635px ; 
+   height: 100%;
+    min-height: 60px;
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $text-color;
+    margin-bottom: 49px;
+    @include responsive(992){
+        font-size: 1.4rem;
+    }
+}
+.mon{
+   display: flex;
+   align-items: center;
+   width: 240px;
+   background-color: $price-bg-color;
+   border-radius: 5px;
+   padding: 0px 18px;
+   margin-top: -480px;
+   @include responsive(768){
+    margin-top: -60px;
+    width: 245px;
+    height: 45px;
+   }
+}
+.numbers{
+     width: 102px;
+      height: 45px;
+      font-family: $site-fonts;
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 1.5;
+      color: $primary-color;
+      @include responsive(992){
+        font-size: 2.4rem;
+    }
+    @include responsive(992){
+        font-size: 2.2rem;
+    }
+}
+.personal{
+    @include responsive(776){
+        margin-bottom:-100px;
+    }
+}
+.tuit{
+    font-family: $site-fonts;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.6;
+    color: $primary-color;
+    @include responsive(992){
+       font-size: 2.2rem;
+    }
+    @include responsive(776){
+        margin-top: -500px;
+      }
+}
+.enjoy{
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $text-color;
+    margin-bottom: 80px;
+    @include responsive(1197){
+        margin-bottom: 100px;
+    }
+    @include responsive(992){
+       font-size: 1.6rem;
+    }
+}
+.webinar{
+    @include responsive(992){
+      width: 242px;
+      height: 242px;
+      margin-bottom: 50px;
+    }
+}
+.cash{
+    display: flex;
+    align-items: center;
+    max-width: 240px;
+    min-height: 45px;
+    background-color: $price-bg-color;
+    border-radius: 5px;
+    padding: 0px 18px;
+    @include responsive(992){
+        margin-top: -70px;
+    }
+}
+.euro{
+    width: 114px;
+    height: 45px;
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #263238;
+    @include responsive(992){
+        font-size: 2.4rem;
+    }
+
+}
+.day{
+    width: 100px;
+    height: 27px;
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #546269;
+    @include responsive(992){
+        font-size: 1.6rem;
+    }
+}

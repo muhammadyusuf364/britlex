@@ -1,0 +1,158 @@
+.hero{   
+    .hero__one{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        
+        @include responsive(576){
+            display: flex;
+            flex-direction: column-reverse;
+          }
+    }
+    &__two{
+        display: flex;
+        align-items: center;
+    }
+    &__learen{
+        width: 100%;
+        max-width: 386px;
+        height: 100%;
+        min-height: 240px;
+        font-family: $site-fonts;
+        font-style: normal;
+        color: $black-color;
+        font-weight: 600;
+        font-size: 6.4rem;
+        line-height: 1.125;
+        margin-bottom: 40px;
+
+        @include responsive(1090){
+            font-size:5.5rem;
+            margin-bottom: 15px;
+        }
+        @include responsive(992){
+           max-width: 290px;
+           min-height:192px;
+           font-weight: 600;
+           font-size: 4.8rem;
+           line-height: 1.5;
+           margin-bottom: 27px;
+           margin-top: -81px;
+        }
+        @include responsive(768){
+            max-width: 217px;
+            min-height:135px;
+            font-weight: 600;
+            font-size: 3.6rem;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            margin-top: 67px;
+        }
+        @include responsive(871){
+            max-width: 217px;
+            min-height:135px;
+            font-weight: 600;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            margin-top: 67px;
+        }
+        @include responsive(576){
+            max-width: 491px;
+            min-height:45px;
+            font-weight: 600;
+            font-size: 3.4rem;
+            line-height: 1.2;
+            margin-bottom: 26px;
+            margin-top: 54px;
+            text-align: center;
+        }
+        @include responsive(350){
+            max-width: 220px;
+            min-height:72px;
+            font-weight: 600;
+            font-size: 2.4rem;
+            line-height: 1.5;
+            margin-bottom: 26px;
+            margin-top: 54px;
+            text-align: center;
+        }
+
+
+
+
+    }
+    &__lampa{
+        width: 100%;
+        max-width: 85.24px;
+        height: 100%;
+        min-height: 85.24px;
+    }
+    &__text{
+        width: 100%;
+        max-width: 632px;
+        height: 100%;
+        font-family:$site-fonts;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 1.5;
+        margin-bottom: 61px;
+
+        @include responsive(1090){
+            font-size: 1.8rem;
+        }
+        @include responsive(992){
+            min-height: 90px;
+            font-size: 2rem;
+            line-height: 1.5;
+            margin-bottom: 33px;
+            font-weight: 400;
+         }
+         @include responsive(768){
+            min-height: 72px;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            font-weight: 400;
+         }
+         @include responsive(576){
+            max-width: 632px;
+            min-height: 48px;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-bottom: 37px;
+            font-weight: 400;
+            text-align: center;
+         }
+         @include responsive(350){
+            max-width: 632px;
+            min-height: 63px;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            margin-bottom: 35px;
+            font-weight: 400;
+            text-align: center;
+         }
+    }
+    &__img{
+        @include responsive(992){
+            max-width: 46rem;
+            min-height: 46rem;
+        }
+        @include responsive(768){
+           max-width: 35.2rem;
+           min-height: 35.2rem;
+         }
+         @include responsive(576){
+            max-width: 42.4rem;
+            // min-height: 42.4rem;
+          }
+          @include responsive(350){
+            max-width: 29.9rem;
+            min-height: 29.9rem;
+          }
+
+    }
+}

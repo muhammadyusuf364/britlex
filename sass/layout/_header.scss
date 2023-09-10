@@ -1,0 +1,41 @@
+ .header{
+    padding: 5.5rem 0;
+    
+    .container{
+        @include responsive(350){
+          display: flex;
+          align-items: center;
+          }
+    }
+   .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+  
+   
+   &__nav{
+    @include responsive(768){
+        display: none;
+    }
+   }
+   &__nav-list{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+   }
+
+   &__nav-link{
+    font-weight: 500;
+    color: $primary-color;
+    @include responsive(992){
+        font-size: 1.6rem;
+    }
+   }
+   &__nav-link:hover{
+    color:red;
+    font-size:3rem ;
+    transition: 0.5s;
+    border-bottom: 2px solid gray;
+   }
+ }

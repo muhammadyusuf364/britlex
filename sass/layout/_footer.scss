@@ -1,0 +1,157 @@
+.contact {
+    margin-top: 250px;
+    gap: 110px;
+    display: flex;
+  
+    @include responsive(992) {
+      margin-top: 140px;
+    }
+    @include responsive(768) {
+      margin-top: 94px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    @include responsive(576) {
+      display: flex;
+      gap: 1px;
+    }
+    .input-box {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+  
+    }
+    @include responsive(576){
+      .input-box{
+      display: flex;
+      flex-direction: column;
+      }
+    }
+    img {
+      @include responsive(992) {
+        width: 312px;
+        height: 281px;
+      }
+      @include responsive(768) {
+        width: 233px;
+        height: 210px;
+      }
+      @include responsive(576) {
+        width: 358px;
+        height: 322px;
+      }
+      @include responsive(320) {
+        width: 253px;
+      }
+    }
+    .contact-us h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 80px;
+      color: #000000;
+  
+      @include responsive(992) {
+        font-size: 3rem;
+      }
+      @include responsive(768){
+        display: none;
+      }
+    }
+    .contact-us p {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #8f95a5;
+  
+      @include responsive(768) {
+        font-size: 1.4rem;
+      }
+    }
+    input {
+      padding: 26px;
+      color: black;
+      border: 1px solid #8f95a5;
+      border-radius: 10px;
+      width: 450px;
+    }
+  
+    a {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 25px 80px;
+      background: #263238;
+      border-radius: 10px;
+      color: #ffffff;
+  
+      @include responsive(768) {
+        padding: 15px 40px;
+      }
+    }
+    .input-box {
+      @include responsive(992) {
+        input {
+          width: 283px;
+          height: 50px;
+        }
+      }
+      @include responsive(768) {
+        input {
+          width: 283px;
+        }
+      }
+    }
+  }
+
+  .hr{
+    border: 1px solid#C4C4C4;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 31px;
+   
+ 
+  .footer__link ul{
+    display: flex;
+    gap: 5px;
+    @include responsive(350){
+        display: flex;
+        flex-direction: column;
+      }
+  }
+  .footer__logo h1{
+      font-size: 3.6rem;
+      color: #000000;
+      span{
+        color: #939393;
+      }
+      @include responsive(992){
+        font-size: 3rem;
+      }
+       @include responsive(350){
+        display: flex;
+  }
+  }
+  ul li a{
+    @include responsive(992){
+        font-size: 1.6rem;
+      }
+      @include responsive(768){
+        font-size: 1.3rem;
+      }
+      @include responsive(576){
+        font-size: 1.3rem;
+      }
+  }
+  
+}

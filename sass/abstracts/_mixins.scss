@@ -1,0 +1,47 @@
+@mixin responsive ($brackpoints){
+    @if $brackpoints == 1400{
+        @media only screen and (max-width:1400px){@content}
+    };
+    @if $brackpoints == 1235{
+        @media only screen and (max-width:1235px){@content}
+    };
+    @if $brackpoints == 1090{
+        @media only screen and (max-width:1090px){@content}
+    };
+    @if $brackpoints == 1197{
+        @media only screen and (max-width:1197px){@content}
+    };
+    @if $brackpoints == 1160{
+        @media only screen and (max-width:1160px){@content}
+    };
+    @if $brackpoints == 992{
+        @media only screen and (max-width:992px){@content}
+    };
+    @if $brackpoints == 871{
+        @media only screen and (max-width:871px){@content}
+    };
+    @if $brackpoints == 768{
+        @media only screen and (max-width:768px){@content}
+    };
+    @if $brackpoints == 640{
+        @media only screen and (max-width:640px){@content}
+    };
+    @if $brackpoints == 626{
+        @media only screen and (max-width:626px){@content}
+    };
+    @if $brackpoints == 576{
+        @media only screen and (max-width:576px){@content}
+    };
+    @if $brackpoints == 573{
+        @media only screen and (max-width:573px){@content}
+    };
+    @if $brackpoints == 436{
+        @media only screen and (max-width:436px){@content}
+    };
+    @if $brackpoints == 390{
+        @media only screen and (max-width:390px){@content}
+    };
+    @if $brackpoints == 350{
+        @media only screen and (max-width:350px){@content}
+    };
+}

@@ -1,0 +1,182 @@
+.burger__btn{
+    display: none;
+    @include responsive(768){
+        display: block;
+    }
+}
+
+.hero__lampa{
+    display: block;
+    @include responsive(576){
+      display: none;
+      }
+}
+
+.header__btn{
+    padding: 1.6rem 5.6rem;
+    border: 2px solid $primary-color;
+    border-radius: 0.5rem;
+    color: $primary-color;
+     font-size: 2.4rem;
+     line-height: 1.5;
+     @include responsive(992){
+        font-size: 1.8rem;
+     }
+
+     @include responsive(768){
+        display: none;
+    }
+
+     &:hover{
+        background-color: $primary-color;
+        color: $white-color;
+     }
+}
+
+    .get{
+        padding: 32px 117px ;
+        background-color: $primary-color;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 203px;
+        height: 100%;
+        min-height: 54px;
+        font-weight: 400;
+        font-size: 2.3rem;
+        line-height: 2.3;
+        color: $white-color;
+
+        @include responsive(1090){
+            padding: 20px 80px;
+        }
+        @include responsive(992){
+            padding: 22px 78px;
+            border-radius: 5px;
+         }
+         @include responsive(768){
+            padding: 19px 67px;
+            border-radius: 5px;
+         }
+         @include responsive(640){
+            padding: 15px 60px;
+            border-radius: 5px;
+         }
+         @include responsive(626){
+            padding: 15px 40px;
+            border-radius: 5px;
+         }
+         @include responsive(576){
+            padding: 24px 101px;
+            border-radius: 5px;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            margin-left: 20%;
+         }
+         @include responsive(436){
+            padding: 20px 100px;
+            border-radius: 5px;
+            margin-left: 10%;
+         }
+         @include responsive(390){
+            padding: 16px 99px;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-left: 20px;
+         }
+         @include responsive(350){
+            padding: 16px 99px;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-left: 20px;
+         }
+    }
+      .div{
+         @include responsive(1235){
+          margin-top: -17rem;
+   
+         }
+      }
+    .box__link{
+        max-width: 103px;
+        min-height: 27px;
+        font-family: $site-fonts;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: $white-color;
+        padding: 17px 63px;
+        background-color: $black-color;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: -90px;
+
+        @include responsive(1235){
+         padding: 12px 42px;
+         margin-top: -120px;
+         font-size: 1.5rem;
+         line-height:1.2;
+         margin-bottom: -80px;
+
+      }
+    }
+   
+    .more{
+      padding: 15px 52px;
+      border-radius: 5px;
+      background-color: $black-color;
+      margin-left: 42px;
+      width: 115px;
+      height: 30px;
+      font-family: $site-fonts;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $white-color;
+      @include responsive(1235){
+         padding: 16px 41px 19px 42px;
+         font-size: 1.8rem;
+         line-height:1.5;
+         font-weight:500;
+      }
+    }
+    .child-link{
+      padding: 15px 52px;
+      border-radius: 5px;
+      background-color: $black-color;
+      margin-left: 42px;
+      width: 115px;
+      height: 30px;
+      font-family: $site-fonts;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $white-color;
+      @include responsive(1235){
+         padding: 16px 41px 19px 42px;
+         font-size: 1.8rem;
+         line-height:1.5;
+         font-weight: 500;
+      }
+    }
+    .can{
+      padding: 15px 52px;
+      border-radius: 5px;
+      background-color: $black-color;
+      margin-left: 42px;
+      width: 115px;
+      height: 30px;
+      font-family: $site-fonts;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $white-color;
+
+      @include responsive(1235){
+         padding: 12px 42px;
+         font-size: 1.5rem;
+         line-height:1.2;
+         margin-bottom: -30px;
+      }
+    }
